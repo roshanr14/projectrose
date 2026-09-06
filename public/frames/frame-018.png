@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" style="background:#070709;">
+      <defs>
+        <radialGradient id="bgVignette" cx="50%" cy="50%" r="65%">
+          <stop offset="0%" stop-color="#1c160e" stop-opacity="0.9" />
+          <stop offset="50%" stop-color="#0e0d0b" stop-opacity="0.96" />
+          <stop offset="100%" stop-color="#060607" stop-opacity="1" />
+        </radialGradient>
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#d4af37" />
+          <stop offset="50%" stop-color="#fff2c6" />
+          <stop offset="100%" stop-color="#aa771c" />
+        </linearGradient>
+        <linearGradient id="roseGoldGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ff7675" />
+          <stop offset="50%" stop-color="#fab1a0" />
+          <stop offset="100%" stop-color="#fdcb6e" />
+        </linearGradient>
+        <filter id="goldGlow" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="8" result="blur" />
+          <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+        <filter id="heavyGlow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="28" result="blur" />
+          <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+      </defs>
+
+      <rect width="1920" height="1080" fill="url(#bgVignette)" />
+
+      <circle cx="960" cy="540" r="460.4" fill="#d4af37" opacity="0.12" filter="url(#heavyGlow)" />
+      <circle cx="976.4" cy="619.2" r="220" fill="#e17055" opacity="0.08" filter="url(#heavyGlow)" />
+
+      <g transform="translate(960, 540) rotate(61.6) scale(0.955)">
+        <ellipse cx="0" cy="0" rx="440" ry="240" stroke="url(#goldGrad)" stroke-width="2.5" fill="none" opacity="0.75" filter="url(#goldGlow)" />
+        <ellipse cx="0" cy="0" rx="360" ry="360" stroke="url(#roseGoldGrad)" stroke-width="1.5" stroke-dasharray="8 14" fill="none" opacity="0.5" />
+      </g>
+
+      <g transform="translate(960, 540) rotate(-90.4) scale(0.955)">
+        <ellipse cx="0" cy="0" rx="480" ry="180" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="16 8" fill="none" opacity="0.6" filter="url(#goldGlow)" />
+        <circle cx="0" cy="0" r="280" stroke="rgba(255, 234, 167, 0.4)" stroke-width="1" fill="none" />
+      </g>
+
+      <g transform="translate(960, 540) rotate(168.2) scale(0.955)">
+        <ellipse cx="0" cy="0" rx="520" ry="300" stroke="url(#roseGoldGrad)" stroke-width="2" fill="none" opacity="0.65" />
+      </g>
+
+      <circle cx="995.5" cy="678.4" r="57.3" stroke="url(#goldGrad)" stroke-width="1.5" fill="none" opacity="0.50" filter="url(#goldGlow)" />
+      <circle cx="877.0" cy="663.6" r="78.3" stroke="url(#goldGrad)" stroke-width="1.9" fill="none" opacity="0.76" filter="url(#goldGlow)" />
+      <circle cx="766.3" cy="600.7" r="99.3" stroke="url(#goldGrad)" stroke-width="2.3" fill="none" opacity="0.92" filter="url(#goldGlow)" />
+      <circle cx="687.3" cy="501.3" r="120.4" stroke="url(#goldGrad)" stroke-width="2.7" fill="none" opacity="0.94" filter="url(#goldGlow)" />
+      <circle cx="659.1" cy="392.8" r="141.4" stroke="url(#goldGrad)" stroke-width="3.1" fill="none" opacity="0.83" filter="url(#goldGlow)" />
+      <circle cx="691.2" cy="310.7" r="162.4" stroke="url(#goldGrad)" stroke-width="3.5" fill="none" opacity="0.61" filter="url(#goldGlow)" />
+      <circle cx="781.3" cy="287.4" r="183.4" stroke="url(#goldGrad)" stroke-width="3.9000000000000004" fill="none" opacity="0.31" filter="url(#goldGlow)" />
+      <circle cx="914.4" cy="340.6" r="204.4" stroke="url(#goldGrad)" stroke-width="4.300000000000001" fill="none" opacity="0.00" filter="url(#goldGlow)" />
+
+      <g transform="translate(960, 540) scale(0.955)">
+        <circle cx="0" cy="0" r="209.3" fill="url(#goldGrad)" opacity="0.22" filter="url(#heavyGlow)" />
+        <circle cx="0" cy="0" r="157.0" stroke="url(#goldGrad)" stroke-width="3" fill="none" opacity="0.9" filter="url(#goldGlow)" />
+        <circle cx="0" cy="0" r="83.7" fill="#fffdfa" opacity="0.85" filter="url(#goldGlow)" />
+
+        <line x1="-120" y1="0" x2="120" y2="0" stroke="#f6d365" stroke-width="1.2" opacity="0.6" stroke-dasharray="4 6" />
+        <line x1="0" y1="-120" x2="0" y2="120" stroke="#f6d365" stroke-width="1.2" opacity="0.6" stroke-dasharray="4 6" />
+      </g>
+
+      <circle cx="1102.1" cy="684.6" r="3.4" fill="#ffeaa7" opacity="0.74" filter="url(#goldGlow)" />
+      <circle cx="1045.2" cy="680.9" r="2.4" fill="#ffeaa7" opacity="1.00" filter="url(#goldGlow)" />
+      <circle cx="997.9" cy="681.5" r="0.2" fill="#ffeaa7" opacity="0.61" filter="url(#goldGlow)" />
+      <circle cx="952.4" cy="689.2" r="3.1" fill="#ffeaa7" opacity="0.66" filter="url(#goldGlow)" />
+      <circle cx="899.4" cy="702.3" r="2.9" fill="#ffeaa7" opacity="1.00" filter="url(#goldGlow)" />
+      <circle cx="834.3" cy="714.6" r="0.2" fill="#ffeaa7" opacity="0.69" filter="url(#goldGlow)" />
+      <circle cx="760.2" cy="718.5" r="2.6" fill="#ffeaa7" opacity="0.57" filter="url(#goldGlow)" />
+      <circle cx="687.8" cy="708.6" r="3.3" fill="#ffeaa7" opacity="0.99" filter="url(#goldGlow)" />
+      <circle cx="630.8" cy="683.4" r="0.3" fill="#ffeaa7" opacity="0.77" filter="url(#goldGlow)" />
+      <circle cx="600.6" cy="646.8" r="2.1" fill="#ffeaa7" opacity="0.48" filter="url(#goldGlow)" />
+      <circle cx="600.5" cy="605.7" r="3.6" fill="#ffeaa7" opacity="0.97" filter="url(#goldGlow)" />
+      <circle cx="625.0" cy="567.2" r="0.6" fill="#ffeaa7" opacity="0.84" filter="url(#goldGlow)" />
+      <circle cx="661.3" cy="535.4" r="1.6" fill="#ffeaa7" opacity="0.38" filter="url(#goldGlow)" />
+      <circle cx="695.5" cy="510.1" r="3.8" fill="#ffeaa7" opacity="0.93" filter="url(#goldGlow)" />
+      <circle cx="718.3" cy="487.3" r="0.9" fill="#ffeaa7" opacity="0.90" filter="url(#goldGlow)" />
+      <circle cx="728.9" cy="461.8" r="1.1" fill="#ffeaa7" opacity="0.32" filter="url(#goldGlow)" />
+      <circle cx="734.8" cy="430.0" r="3.8" fill="#ffeaa7" opacity="0.88" filter="url(#goldGlow)" />
+      <circle cx="748.0" cy="392.8" r="1.4" fill="#ffeaa7" opacity="0.94" filter="url(#goldGlow)" />
+      <circle cx="778.8" cy="355.6" r="0.7" fill="#ffeaa7" opacity="0.41" filter="url(#goldGlow)" />
+      <circle cx="830.7" cy="326.0" r="3.7" fill="#ffeaa7" opacity="0.82" filter="url(#goldGlow)" />
+      <circle cx="898.7" cy="311.5" r="1.9" fill="#ffeaa7" opacity="0.98" filter="url(#goldGlow)" />
+      <circle cx="971.5" cy="315.4" r="0.4" fill="#ffeaa7" opacity="0.51" filter="url(#goldGlow)" />
+      <circle cx="1036.2" cy="335.9" r="3.4" fill="#ffeaa7" opacity="0.75" filter="url(#goldGlow)" />
+      <circle cx="1084.7" cy="366.8" r="2.4" fill="#ffeaa7" opacity="0.99" filter="url(#goldGlow)" />
+      <circle cx="1116.6" cy="400.0" r="0.2" fill="#ffeaa7" opacity="0.60" filter="url(#goldGlow)" />
+      <circle cx="1139.3" cy="429.0" r="3.1" fill="#ffeaa7" opacity="0.67" filter="url(#goldGlow)" />
+      <circle cx="1163.8" cy="451.2" r="2.9" fill="#ffeaa7" opacity="1.00" filter="url(#goldGlow)" />
+      <circle cx="1198.8" cy="469.0" r="0.2" fill="#ffeaa7" opacity="0.69" filter="url(#goldGlow)" />
+      <circle cx="1245.8" cy="487.7" r="2.6" fill="#ffeaa7" opacity="0.58" filter="url(#goldGlow)" />
+      <circle cx="1297.7" cy="512.6" r="3.3" fill="#ffeaa7" opacity="0.99" filter="url(#goldGlow)" />
+      <circle cx="1341.0" cy="545.9" r="0.3" fill="#ffeaa7" opacity="0.77" filter="url(#goldGlow)" />
+      <circle cx="1361.6" cy="585.4" r="2.1" fill="#ffeaa7" opacity="0.49" filter="url(#goldGlow)" />
+      <circle cx="1350.5" cy="625.1" r="3.6" fill="#ffeaa7" opacity="0.97" filter="url(#goldGlow)" />
+      <circle cx="1308.0" cy="657.8" r="0.5" fill="#ffeaa7" opacity="0.84" filter="url(#goldGlow)" />
+      <circle cx="1243.2" cy="678.4" r="1.6" fill="#ffeaa7" opacity="0.39" filter="url(#goldGlow)" />
+      <circle cx="1170.3" cy="686.0" r="3.8" fill="#ffeaa7" opacity="0.93" filter="url(#goldGlow)" />
+
+      <path d="M 80 120 L 80 80 L 120 80" stroke="#d4af37" stroke-width="2" fill="none" opacity="0.4" />
+      <path d="M 1840 120 L 1840 80 L 1800 80" stroke="#d4af37" stroke-width="2" fill="none" opacity="0.4" />
+      <path d="M 80 960 L 80 1000 L 120 1000" stroke="#d4af37" stroke-width="2" fill="none" opacity="0.4" />
+      <path d="M 1840 960 L 1840 1000 L 1800 1000" stroke="#d4af37" stroke-width="2" fill="none" opacity="0.4" />
+
+      <text x="960" y="1020" font-family="'Outfit', sans-serif" font-size="13" font-weight="600" fill="#aa8c4a" letter-spacing="0.35em" text-anchor="middle" opacity="0.6">
+        ROSEFIT KINETIC CORE // SEQUENCE 018 / 150
+      </text>
+    </svg>

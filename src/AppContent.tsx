@@ -3,6 +3,7 @@ import { useAuth } from './context/AuthContext';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { Hero } from './components/landing/Hero';
+import { ScrollCanvasHero } from './components/canvas/ScrollCanvasHero';
 import { ChannelIntro } from './components/landing/ChannelIntro';
 import { ProgramsList } from './components/landing/ProgramsList';
 import { ExerciseVault } from './components/landing/ExerciseVault';
@@ -58,7 +59,7 @@ export const AppContent: React.FC = () => {
       {/* Main View Area */}
       {currentView === 'landing' ? (
         <main>
-          <Hero
+          <ScrollCanvasHero
             onOpenAuth={handleOpenAuth}
             onExplorePrograms={() => {
               const el = document.getElementById('programs');
@@ -66,6 +67,13 @@ export const AppContent: React.FC = () => {
             }}
           />
           <ChannelIntro />
+          <Hero
+            onOpenAuth={handleOpenAuth}
+            onExplorePrograms={() => {
+              const el = document.getElementById('programs');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }}
+          />
           <ProgramsList
             onOpenAuth={handleOpenAuth}
           />
