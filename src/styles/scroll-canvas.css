@@ -1,0 +1,362 @@
+/* ==========================================================================
+   ROSEFIT ULTRA-LUXURY SCROLL CANVAS DESIGN SYSTEM
+   Deep Gold / Dark Luxury Aesthetic & Apple-grade Smooth Scroll Visuals
+   ========================================================================== */
+
+.scroll-hero-container {
+  position: relative;
+  width: 100%;
+  height: 480vh; /* Extended tall scroll track for precise scroll resolution */
+  background-color: #060608;
+  color: #f5f0eb;
+  user-select: none;
+}
+
+/* Pinned Fullscreen Viewport */
+.scroll-hero-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 50%, #15120c 0%, #0a0907 55%, #050506 100%);
+  z-index: 10;
+}
+
+/* Background Atmospheric Aura */
+.scroll-hero-ambient-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: 
+    radial-gradient(ellipse 65% 50% at 50% 45%, rgba(212, 175, 55, 0.12) 0%, transparent 70%),
+    radial-gradient(circle at 20% 80%, rgba(253, 160, 133, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(246, 211, 101, 0.08) 0%, transparent 60%);
+  mix-blend-mode: screen;
+  z-index: 1;
+}
+
+/* Subtle Vignette Overlay for Seamless Zero-Edge Blending */
+.scroll-hero-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 120px 40px #060608;
+  z-index: 3;
+}
+
+/* HTML5 Canvas Element */
+.scroll-canvas-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+  will-change: transform;
+}
+
+/* Interactive Narrative Overlays Layer */
+.scroll-hero-content-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 48px;
+}
+
+@media (max-width: 768px) {
+  .scroll-hero-content-layer {
+    padding: 24px 20px;
+  }
+}
+
+/* Top Status HUD */
+.scroll-hero-top-hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.scroll-hero-hud-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  background: rgba(18, 16, 12, 0.7);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  backdrop-filter: blur(16px);
+  border-radius: 9999px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e5c158;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.scroll-hero-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulseAura 2s infinite ease-in-out;
+}
+
+@keyframes pulseAura {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.3); }
+}
+
+/* Center Waypoint Story Cards */
+.scroll-hero-center-stage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  padding: 0 24px;
+  pointer-events: none;
+}
+
+.scroll-narrative-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 820px;
+  text-align: center;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.scroll-narrative-card.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+}
+
+.scroll-narrative-card.inactive {
+  opacity: 0;
+  transform: translate(-50%, -46%) scale(0.96);
+  pointer-events: none;
+}
+
+/* Luxury Typography */
+.scroll-luxury-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(0.75rem, 1.2vw, 0.95rem);
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #d4af37;
+  margin-bottom: 14px;
+  display: inline-block;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.scroll-luxury-title {
+  font-family: 'Bebas Neue', 'Outfit', sans-serif;
+  font-size: clamp(3rem, 7.5vw, 6.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #fef3c7 40%, #e5c158 80%, #aa771c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.8));
+}
+
+.scroll-luxury-desc {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+  color: #cbd5e1;
+  line-height: 1.6;
+  max-width: 620px;
+  margin: 0 auto 30px auto;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+/* Floating Actions */
+.scroll-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #f6d365 50%, #b8860b 100%);
+  color: #0c0a06;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  padding: 14px 32px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.35), 0 0 20px rgba(246, 211, 101, 0.2);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 36px rgba(212, 175, 55, 0.5), 0 0 30px rgba(246, 211, 101, 0.4);
+  color: #000;
+}
+
+.btn-glass-gold {
+  background: rgba(18, 16, 12, 0.6);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #fef3c7;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-glass-gold:hover {
+  background: rgba(212, 175, 55, 0.18);
+  border-color: #f6d365;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Bottom Progress HUD & Scroll Prompter */
+.scroll-hero-bottom-hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.scroll-progress-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.scroll-progress-bar-track {
+  width: 140px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #d4af37 50%, #f6d365 100%);
+  border-radius: 4px;
+  transition: width 0.08s linear;
+  box-shadow: 0 0 10px #d4af37;
+}
+
+.scroll-frame-counter {
+  font-family: 'Outfit', monospace;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #d4af37;
+  letter-spacing: 0.08em;
+}
+
+/* Scroll Mouse / Chevron Indicator */
+.scroll-prompter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(212, 175, 55, 0.85);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-mouse-icon {
+  width: 20px;
+  height: 32px;
+  border: 1.5px solid rgba(212, 175, 55, 0.6);
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.scroll-mouse-wheel {
+  width: 3px;
+  height: 6px;
+  background: #f6d365;
+  border-radius: 2px;
+  animation: scrollWheelAnim 1.8s infinite ease-in-out;
+}
+
+@keyframes scrollWheelAnim {
+  0% { transform: translateY(0); opacity: 1; }
+  60% { transform: translateY(10px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+
+/* Loader Overlay if initial frames are loading */
+.scroll-canvas-loader {
+  position: absolute;
+  inset: 0;
+  background: #060608;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  transition: opacity 0.5s ease;
+}
+
+.scroll-canvas-loader.loaded {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-spinner-gold {
+  width: 52px;
+  height: 52px;
+  border: 3px solid rgba(212, 175, 55, 0.18);
+  border-top-color: #d4af37;
+  border-right-color: #f6d365;
+  border-radius: 50%;
+  animation: spinLoader 0.9s infinite linear;
+}
+
+@keyframes spinLoader {
+  to { transform: rotate(360deg); }
+}

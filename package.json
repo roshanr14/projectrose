@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node scripts/prepare-frames.cjs && vite",
+    "build": "node scripts/prepare-frames.cjs && tsc && vite build",
+    "prepare:frames": "node scripts/prepare-frames.cjs",
     "preview": "vite preview"
   },
   "dependencies": {
